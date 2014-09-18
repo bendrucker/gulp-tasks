@@ -1,8 +1,9 @@
 'use strict';
 
-var _ = require('lodash');
+var _    = require('lodash');
+var gulp = require('gulp');
 
-exports.register = function (gulp, name, src, dest, options) {
+exports.register = function (name, src, dest, options) {
   var task = _.defaults(require('./tasks/' + name), {
     src: true,
     dest: true
