@@ -38,6 +38,4 @@ module.exports = function (path, options) {
   }
 };
 
-module.exports.options = {
-  src: 'path'
-};
+module.exports.rawSrc = true;

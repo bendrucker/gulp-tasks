@@ -10,6 +10,6 @@ module.exports = function (stream) {
   return stream.pipe(rimraf());
 };
 
-module.exports.options = {
+module.exports.srcOptions = {
   read: false
 };

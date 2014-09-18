@@ -8,11 +8,11 @@ var _           = require('lodash');
 var Promise     = require('bluebird');
 var superstatic = require('superstatic');
 var livereload  = require('connect-livereload');
-var util        = require('gulp-util');
 var env         = require('../utils/env');
 
-module.exports = function (options) {
+module.exports = function (src, options) {
   var server = superstatic(_.defaults(options || {}, {
+    root: src,
     host: '0.0.0.0',
     port: 8000
   }));
@@ -22,7 +22,5 @@ module.exports = function (options) {
   return Promise.promisify(server.listen, server)();
 };
 
-module.exports.options = {
-  src: false,
-  dest: false
-};
+module.exports.rawSrc = true;
+module.exports.dest = false;

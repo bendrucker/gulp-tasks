@@ -16,6 +16,4 @@ module.exports = function (stream) {
     .pipe(jshint.reporter('fail'));
 };
 
-module.exports.options = {
-  dest: false
-};
+module.exports.dest = false;

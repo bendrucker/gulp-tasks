@@ -2,23 +2,18 @@
 
 var _ = require('lodash');
 
-exports.register = function (gulp, name, src, dest) {
+exports.register = function (gulp, name, src, dest, options) {
   var task = _.defaults(require('./tasks/' + name), {
     src: true,
     dest: true
   });
   gulp.task(name, function () {
     var input;
-    if (task.src === 'path') {
-      input = task.src;
-    }
-    else if (task.src) {
-      input = gulp.src(task.src);
-    };
+    if (task.src) input = task.options.rawSrc ? src : gulp.src(src, task.srcOptions);
 
-    var result = task(input);
+    var result = task(input, options);
 
     if (task.dest) return result.pipe(gulp.dest(dest));
     return result;
   });
-}
+};
