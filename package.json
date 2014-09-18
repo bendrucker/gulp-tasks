@@ -1,7 +1,7 @@
 {
   "name": "gulp-tasks",
   "version": "0.0.0",
-  "description": "gulp-tasks ==========",
+  "description": "Reusable gulp tasks",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/bendrucker/gulp-tasks",
   "dependencies": {
     "gulp-jshint": "1",
-    "jshint-stylish": "0.4"
+    "jshint-stylish": "0.4",
+    "gulp-rimraf": "0.1"
   }
 }
