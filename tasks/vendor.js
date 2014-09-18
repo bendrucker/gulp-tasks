@@ -5,7 +5,7 @@ concatenate vendor scripts
 */
 
 var concat   = require('gulp-concat');
-var uglify   = require('uglify');
+var uglify   = require('gulp-uglify');
 var rev      = require('gulp-rev');
 var env      = require('../utils/env');
 var manifest = require('../utils/manifest');
