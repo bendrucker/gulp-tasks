@@ -2,7 +2,7 @@
   "name": "gulp-tasks",
   "version": "0.0.0",
   "description": "Reusable gulp tasks",
-  "main": "index.js",
+  "main": "./src/task",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
