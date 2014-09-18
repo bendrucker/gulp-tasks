@@ -13,3 +13,5 @@ module.exports = function (stream) {
 module.exports.srcOptions = {
   read: false
 };
+
+module.exports.dest = false;
