@@ -1,5 +1,11 @@
 'use strict';
 
+/*
+* lint code
+* print failures with stylish
+* emit an 'error' if failures
+*/
+
 var jshint  = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 
