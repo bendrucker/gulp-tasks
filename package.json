@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/bendrucker/gulp-tasks",
   "dependencies": {
+    "browserify": "5",
+    "gulp-angular-templatecache": "1",
     "gulp-concat": "2",
+    "gulp-htmlmin": "0.2",
     "gulp-if": "1",
     "gulp-jshint": "1",
     "gulp-minify-css": "0.3",
