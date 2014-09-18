@@ -7,6 +7,7 @@ var buffer      = require('vinyl-buffer');
 var streamqueue = require('streamqueue');
 var uglify      = require('gulp-uglify');
 var rev         = require('gulp-rev');
+var concat      = require('gulp-concat');
 var templates   = require('./templates');
 var env         = require('../utils/env');
 var manifest    = require('../utils/manifest');
@@ -33,6 +34,7 @@ module.exports = function (path, options) {
     return streamqueue({objectMode: true}, bundle, templates.cache(gulp.src(options.templates), {
       module: options.module
     }))
+    .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(rev())
     .pipe(manifest());
