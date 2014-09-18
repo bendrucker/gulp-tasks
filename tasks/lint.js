@@ -15,3 +15,7 @@ module.exports = function (stream) {
     .pipe(jshint.reporter(stylish))
     .pipe(jshint.reporter('fail'));
 };
+
+module.exports.options = {
+  dest: false
+};

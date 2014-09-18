@@ -21,3 +21,8 @@ module.exports = function (options) {
 
   return Promise.promisify(server.listen, server)();
 };
+
+module.exports.options = {
+  src: false,
+  dest: false
+};

@@ -37,3 +37,7 @@ module.exports = function (path, options) {
     .pipe(manifest());
   }
 };
+
+module.exports.options = {
+  src: 'path'
+};
