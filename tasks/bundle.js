@@ -1,5 +1,6 @@
 'use strict';
 
+var gulp        = require('gulp');
 var browserify  = require('browserify');
 var source      = require('vinyl-source-stream');
 var buffer      = require('vinyl-buffer');
@@ -29,7 +30,7 @@ module.exports = function (path, options) {
     return bundle;
   }
   else {
-    return streamqueue({objectMode: true}, bundle, templates.cache(templates, {
+    return streamqueue({objectMode: true}, bundle, templates.cache(gulp.src(options.templates), {
       module: options.module
     }))
     .pipe(uglify())
