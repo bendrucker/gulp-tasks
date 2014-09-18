@@ -1,5 +1,9 @@
 'use strict';
 
+/*
+utilities for acting on an --env flag
+*/
+
 var util = require('gulp-util');
 var iff  = require('gulp-if');
 
