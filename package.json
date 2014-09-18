@@ -31,9 +31,14 @@
     "gulp-rev": "1",
     "gulp-rimraf": "0.1",
     "gulp-sass": "0.7",
+    "gulp-uglify": "1",
     "gulp-util": "3",
     "jshint-stylish": "0.4",
     "node-bourbon": "1",
-    "through2": "0.6"
+    "streamqueue": "0.1",
+    "through2": "0.6",
+    "uglifyify": "2",
+    "vinyl-buffer": "1",
+    "vinyl-source-stream": "1"
   }
 }
