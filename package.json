@@ -27,6 +27,7 @@
     "gulp-rev": "1",
     "gulp-rimraf": "0.1",
     "gulp-util": "3",
-    "jshint-stylish": "0.4"
+    "jshint-stylish": "0.4",
+    "through2": "0.6"
   }
 }
