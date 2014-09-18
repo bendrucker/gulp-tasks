@@ -1,0 +1,23 @@
+{
+  "name": "gulp-tasks",
+  "version": "0.0.0",
+  "description": "gulp-tasks ==========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bendrucker/gulp-tasks.git"
+  },
+  "keywords": [
+    "gulp",
+    "tasks"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/gulp-tasks/issues"
+  },
+  "homepage": "https://github.com/bendrucker/gulp-tasks"
+}
