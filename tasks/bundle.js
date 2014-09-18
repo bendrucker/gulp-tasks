@@ -16,7 +16,7 @@ function build (path) {
     .add(path)
     .transform('browserify-shim');
 
-  if (!env.isDev) b.tranform('uglifyify');
+  if (!env.isDev) b.transform('uglifyify');
 
   return b
     .bundle()
