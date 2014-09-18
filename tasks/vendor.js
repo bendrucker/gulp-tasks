@@ -12,7 +12,7 @@ var manifest = require('../utils/manifest');
 
 module.exports = function (stream) {
   return stream
-    .pipe(concat('vendor.js'));
+    .pipe(concat('vendor.js'))
     .pipe(env.not('development', uglify()))
     .pipe(env.not('development', rev()))
     .pipe(env.not('development', manifest()));
