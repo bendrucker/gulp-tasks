@@ -3,7 +3,7 @@
 var _    = require('lodash');
 var gulp = require('gulp');
 
-exports.register = function (name, src, dest, options) {
+exports.use = function (name, src, dest, options) {
   var task = _.defaults(require('../tasks/' + name), {
     src: true,
     dest: true
