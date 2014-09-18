@@ -1,6 +1,6 @@
 {
   "name": "gulp-tasks",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Reusable gulp tasks",
   "main": "./src/task",
   "scripts": {
