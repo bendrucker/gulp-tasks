@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/bendrucker/gulp-tasks/issues"
   },
-  "homepage": "https://github.com/bendrucker/gulp-tasks"
+  "homepage": "https://github.com/bendrucker/gulp-tasks",
+  "dependencies": {
+    "gulp-jshint": "1",
+    "jshint-stylish": "0.4"
+  }
 }
