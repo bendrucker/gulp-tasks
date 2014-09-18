@@ -10,7 +10,7 @@ exports.register = function (name, src, dest, options) {
   });
   gulp.task(name, function () {
     var input;
-    if (task.src) input = task.options.rawSrc ? src : gulp.src(src, task.srcOptions);
+    if (task.src) input = task.rawSrc ? src : gulp.src(src, task.srcOptions);
 
     var result = task(input, options);
 
