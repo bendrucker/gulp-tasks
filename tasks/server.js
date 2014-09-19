@@ -22,5 +22,7 @@ module.exports = function (src, options) {
   return Promise.promisify(server.listen, server)();
 };
 
+module.exports.livereload = livereload;
+
 module.exports.rawSrc = true;
 module.exports.dest = false;
