@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp   = require('gulp');
-var server = require('./tasks/server');
+var server = require('./server');
 var bundle = require('./bundle');
 
 module.exports = function (srcMap, options) {
