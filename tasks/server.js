@@ -7,7 +7,8 @@ Starts a superstatic server
 var _           = require('lodash');
 var Promise     = require('bluebird');
 var superstatic = require('superstatic');
-var livereload  = require('connect-livereload');
+var connectLr   = require('connect-livereload');
+var livereload  = require('gulp-livereload');
 var env         = require('../utils/env');
 
 module.exports = function (src, options) {
