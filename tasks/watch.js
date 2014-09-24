@@ -8,7 +8,7 @@ module.exports = function (srcMap, options) {
   for (var path in srcMap) {
     var task = srcMap[path];
     if (task !== 'bundle') {
-      gulp.watch(path, [srcMap[path]]);
+      gulp.watch(path, [task]);
     }
     else {
       bundle.get(path, {
@@ -19,11 +19,11 @@ module.exports = function (srcMap, options) {
   }
 
   function writeBundle () {
-    bundle.bundle().pipe(gulp.dest(options.build));
+    bundle.bundle().pipe(gulp.dest(options.build + '/scripts'));
   }
 
   server.livereload.listen();
-  gulp.watch(options.glob, server.livereload.changed);
+  gulp.watch(options.build + '/**/*', server.livereload.changed);
 
   return writeBundle();  
 };
