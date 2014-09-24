@@ -44,7 +44,8 @@
     "through2": "0.6",
     "uglifyify": "2",
     "vinyl-buffer": "1",
-    "vinyl-source-stream": "1"
+    "vinyl-source-stream": "1",
+    "watchify": "1"
   },
   "peerDependencies": {
     "gulp": "3"
