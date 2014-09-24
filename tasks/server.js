@@ -18,7 +18,7 @@ module.exports = function (src, options) {
     port: 8000
   }));
 
-  if (env.is('development')) server.use(livereload());
+  if (env.is('development')) server.use(connectLr());
 
   return Promise.promisify(server.listen, server)();
 };
