@@ -14,7 +14,7 @@ var env         = require('../utils/env');
 var manifest    = require('../utils/manifest');
 
 var b;
-function browserify (path, options) {
+function bro (path, options) {
   if (!b) {
     b = browserify(options.watch && watchify.args)
       .add(path)
@@ -27,7 +27,7 @@ function browserify (path, options) {
 }
 
 function bundle () {
-  return browserify.apply(null, arguments)
+  return bro.apply(null, arguments)
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer());
@@ -49,7 +49,7 @@ module.exports = function (path, options) {
   }
 };
 
-module.exports.get = browserify;
+module.exports.get = bro;
 module.exports.bundle = bundle;
 
 module.exports.rawSrc = true;
