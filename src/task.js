@@ -8,7 +8,10 @@ exports.use = function (name, src, dest, options) {
     src: true,
     dest: true
   });
-  gulp.task(name, function () {
+  options = _.defaults(options || {}, {
+    prerequisites: []
+  });
+  gulp.task(name, options.prerequisites, function () {
     var input;
     if (task.src) input = task.rawSrc ? src : gulp.src(src, task.srcOptions);
 
