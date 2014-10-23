@@ -22,4 +22,4 @@ exports.use = function (name, src, dest, options) {
   });
 };
 
-exports.env = require('./utils/env');
+exports.env = require('../utils/env');
