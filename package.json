@@ -1,7 +1,7 @@
 {
-  "name": "gulp-tasks",
+  "name": "bd-gulp-tasks",
   "version": "2.5.3",
-  "description": "Reusable gulp tasks",
+  "description": "Ben's reusable gulp tasks",
   "main": "./src/task",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
