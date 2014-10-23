@@ -21,3 +21,5 @@ exports.use = function (name, src, dest, options) {
     return result;
   });
 };
+
+exports.env = require('./utils/env');
