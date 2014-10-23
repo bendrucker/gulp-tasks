@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+deploy:
+  provider: npm
+  email: bvdrucker@gmail.com
+  api_key:
+    secure: hZTOl9bY3P55NROyHsLse4YRgE9GVZoURVTKH1AI8pAHL/P2wb4WhlSoe8n6WmfdBDxJIPny1fzShTkXK59iFA+aVYEdRekQ1aisX003TYlraJFrRN5GFZkmEJXt6muSUSA1H/qWhH3DHdzB4A3F5XT3Rg/eBxLEBARiVorO1PI=
+  on:
+    tags: true
+    all_branches: true
+    repo: bendrucker/gulp-tasks
