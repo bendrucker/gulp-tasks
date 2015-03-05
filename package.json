@@ -1,6 +1,6 @@
 {
   "name": "bd-gulp-tasks",
-  "version": "2.6.1",
+  "version": "3.0.0",
   "description": "Ben's reusable gulp tasks",
   "main": "./src/task",
   "scripts": {
