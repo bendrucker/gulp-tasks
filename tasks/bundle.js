@@ -16,7 +16,6 @@ function bro (path, options) {
       .add(path);
 
     if (options.watch) watchify(b);
-    if (!env.isDev) b.transform(require('uglifyify'));
   }
   return b;
 }

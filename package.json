@@ -42,7 +42,6 @@
     "streamqueue": "0.1",
     "superstatic": "1",
     "through2": "0.6",
-    "uglifyify": "2",
     "vinyl-buffer": "1",
     "vinyl-source-stream": "1",
     "watchify": "1"
